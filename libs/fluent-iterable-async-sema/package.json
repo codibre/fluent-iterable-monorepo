@@ -1,6 +1,6 @@
 {
   "name": "@fluent-iterable/async-sema",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "async-sema integration with @codibre/fluent-iterable",
   "main": "dist/index.js",
   "files": [

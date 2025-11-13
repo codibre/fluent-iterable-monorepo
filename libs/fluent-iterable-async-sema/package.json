@@ -1,0 +1,59 @@
+{
+  "name": "@fluent-iterable/async-sema",
+  "version": "0.0.0",
+  "description": "async-sema integration with @codibre/fluent-iterable",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "cli": "node dist/cli.js",
+    "test": "jest --runInBand",
+    "test:scope": "jest --runInBand --scope",
+    "test:cov": "jest --runInBand --coverage",
+    "test:unit": "NODE_ENV=test jest --runInBand --forceExit",
+    "lint": "pnpm run lint:format && pnpm run lint:style",
+    "lint:fix": "pnpm run lint:format:fix && pnpm run lint:style:fix",
+    "lint:format": "prettier --check '**/{src,test}/**/*.ts'",
+    "lint:format:fix": "prettier --write '**/{src,test}/**/*.ts'",
+    "lint:style": "eslint",
+    "lint:style:fix": "eslint --fix",
+    "lint:staged": "lint-staged",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "fluent-iterable",
+    "fluent interface",
+    "Iterable",
+    "AyncIterable",
+    "Stream"
+  ],
+  "author": "Farenheith",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codibre/fluent-iterable-monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codibre/fluent-iterable-monorepo/issues"
+  },
+  "homepage": "https://github.com/codibre/fluent-iterable-monorepo/tree/main/libs/fluent-iterable-async-sema",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "async-sema": "^3.1.1"
+  },
+  "dependencies": {
+    "@codibre/fluent-iterable": "^1.39.2"
+  },
+  "peerDependencies": {
+    "async-sema": "^3.1.1"
+  }
+}

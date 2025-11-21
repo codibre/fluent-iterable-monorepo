@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.1.1](///compare/@fluent-iterable/async-sema@0.1.0...@fluent-iterable/async-sema@0.1.1) (2025-11-21)
+### Fixes:
+
+<details>
+<summary>fixing concurrency drain</summary>
+
+
+> Drain wasn't been called, so,
+> process could end before everything ended.
+> Fixed it
+
+
+
+[View commit `c4887cd`](https://github.com/codibre/fluent-iterable-monorepo/commit/c4887cd)
+
+
+</details>
+
 ## [0.1.0](https://github.com/codibre/fluent-iterable-monorepo/compare/...@fluent-iterable/async-sema@0.1.0) (2025-11-13)
 ### Features:
 

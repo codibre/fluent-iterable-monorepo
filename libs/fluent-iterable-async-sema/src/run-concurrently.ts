@@ -19,4 +19,5 @@ export async function runConcurrently<T>(
 			}
 		});
 	}
+	await sema.drain();
 }
